@@ -1,0 +1,14 @@
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    padding: 6rem;
+}
+
+.ring {
+    background: none;
+    border-radius:50%;
+    width:160px;
+    height:160px;
+    border:2px solid black; 
+}
