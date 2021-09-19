@@ -1,0 +1,68 @@
+// Variables //
+
+$font-family: 'MiddleEarth';
+$font-color: black;
+$font-size: 24px;
+$title-align: center;
+
+
+// Heritage //
+
+.default-ring {
+    border-style: solid;
+    border-radius: 50%;
+    background: none;
+    vertical-align: middle;
+}
+
+
+// Mixin //
+@mixin ring ($x, $y, $blur, $color, $size) {
+    width: $size;
+    height: $size;
+    color: $color;
+    box-shadow: $x $y $blur darken($color, 10);
+}
+
+// Style //
+h2 {
+    font-family: $font-family;
+    color: $font-color;
+    font-size: $font-size;
+    text-align: $title-align;
+    margin: 1rem;
+}
+
+#first-ring, #second-ring, #third-ring {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+#please {
+    margin-top: -2rem;
+}
+
+.first-ring {
+    @extend .default-ring;
+    @include ring(2px, 2px, 4px, orange, 50px);
+    border-width: 5px;
+}
+
+.second-ring {
+    @extend .default-ring;
+    @include ring(2px, 2px, 4px, yellow, 150px);
+    border-width: 15px;
+}
+
+
+@for $i from 1 to 6 {
+    .third-ring-#{$i} {
+        @include ring(2px, 2px, 4px, black, $i*25px);
+        @extend .default-ring;
+        border-width: $i*3px;
+        margin-left: $i*-0.5em;
+}
+}
+

@@ -1,27 +1,86 @@
-h2 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.default-ring, .third-ring-5, .third-ring-4, .third-ring-3, .third-ring-2, .third-ring-1, .second-ring, .first-ring {
+    border-style: solid;
+    border-radius: 50%;
+    background: none;
+    vertical-align: middle;
+  }
+  
+  h2 {
+    font-family: "MiddleEarth";
+    color: black;
     font-size: 24px;
     text-align: center;
-    padding: 6rem;
-}
-
-.ring{
+    margin: 1rem;
+  }
+  
+  #first-ring, #second-ring, #third-ring {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+  }
+  
+  #please {
+    margin-top: -2rem;
+  }
+  
+  .first-ring {
     width: 50px;
     height: 50px;
-    border-radius: 50%;
-    border:5px solid black;
-    background: none;
-    box-shadow: 1px 1px 3px red;
-}
-
-.ring-1{
-
-}
-
-.ring-2{
-
-}
-
-.ring-3{
-
-}
+    color: orange;
+    box-shadow: 2px 2px 4px #cc8400;
+    border-width: 5px;
+  }
+  
+  .second-ring {
+    width: 150px;
+    height: 150px;
+    color: yellow;
+    box-shadow: 2px 2px 4px #cccc00;
+    border-width: 15px;
+  }
+  
+  .third-ring-1 {
+    width: 25px;
+    height: 25px;
+    color: black;
+    box-shadow: 2px 2px 4px black;
+    border-width: 3px;
+    margin-left: -0.5em;
+  }
+  
+  .third-ring-2 {
+    width: 50px;
+    height: 50px;
+    color: black;
+    box-shadow: 2px 2px 4px black;
+    border-width: 6px;
+    margin-left: -1em;
+  }
+  
+  .third-ring-3 {
+    width: 75px;
+    height: 75px;
+    color: black;
+    box-shadow: 2px 2px 4px black;
+    border-width: 9px;
+    margin-left: -1.5em;
+  }
+  
+  .third-ring-4 {
+    width: 100px;
+    height: 100px;
+    color: black;
+    box-shadow: 2px 2px 4px black;
+    border-width: 12px;
+    margin-left: -2em;
+  }
+  
+  .third-ring-5 {
+    width: 125px;
+    height: 125px;
+    color: black;
+    box-shadow: 2px 2px 4px black;
+    border-width: 15px;
+    margin-left: -2.5em;
+  }
