@@ -5,10 +5,23 @@ h2 {
     padding: 6rem;
 }
 
-.ring {
+.ring{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border:5px solid black;
     background: none;
-    border-radius:50%;
-    width:160px;
-    height:160px;
-    border:2px solid black; 
+    box-shadow: 1px 1px 3px red;
+}
+
+.ring-1{
+
+}
+
+.ring-2{
+
+}
+
+.ring-3{
+
 }
